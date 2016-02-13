@@ -1,0 +1,11 @@
+#ifndef _cuPrime_hu_
+#define _cuPrime_hu_
+
+#include <curand.h>
+#include <curand_kernel.h>
+
+__global__ void _millerRabinTest( curandState* globalState, unsigned int n, int s, int d, volatile bool * isPrime);
+__global__ void setup_kernel ( curandState * state, unsigned long seed );
+__device__ int getRandomInt(curandState localState, int max);
+__device__ int powerMod(int a, int b, int m);
+#endif

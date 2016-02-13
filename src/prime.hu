@@ -1,0 +1,30 @@
+#ifndef _prime_hu_
+#define _prime_hu_
+
+#include "handleError.h"
+#include <vector>
+#include <map>
+
+
+class PrimeController
+{
+private:
+    std::vector<unsigned int> numbers;
+    std::map<unsigned int, bool> results;
+    float timer;
+
+	void readFromFile(char* path);
+	bool isPrime(unsigned int n);
+	int findBiggestPowerOf2(unsigned int n);
+
+public:
+	PrimeController(char* path);
+
+	void startPrimesCheck();
+	void printResults();
+	void printTime();
+};
+
+
+
+#endif //_prime_hu_
