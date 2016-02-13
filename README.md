@@ -1,20 +1,25 @@
 # PrimalityMillerRabinTest-CUDA_GPU
+
 Testing given prime numbers using Miller Rabin's test and NVIDA's CUDA architecture.
 
 Requirements:
+
     * NVIDIA GPU
     * installed: nvcc
 
 Compilation:
+
     make
 
 Running:
-    ./primes_gpu <f>
+
+    ./primes_gpu f
 
     where:
          * f - text file contains integers (each in new line)
 
 Example:
+
      ./primes_gpu input
 
 Result:
