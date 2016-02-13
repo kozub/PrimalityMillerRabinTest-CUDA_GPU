@@ -18,7 +18,7 @@ Example:
      ./primes_gpu input
 
 Result:
-	``
+	
 	Time:	4.659104ms
 	12344 - composite
 	15487271 - prime
@@ -30,4 +30,4 @@ Result:
 	961757633 - prime
 	961757637 - composite
 	961757809 - prime
-	``
+
